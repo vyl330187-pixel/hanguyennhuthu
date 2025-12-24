@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(#044ff0, #0153eb, #6905eb);
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+.title-wrap {
+  text-align: center;
+}
+.title {
+  padding: 6px 16px;
+  display: inline-block;
+  background-color: ivory;
+  border-radius: 8px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.box {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 18px;
+}
+
+.note {
+  background: #eef5ff;
+  border-left: 4px solid #5b8def;
+  padding: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Quiz */
+.opt {
+  display: block;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+.opt input { display: none; }
+
+.right {
+  display: none;
+  color: green;
+  margin-left: 8px;
+}
+
+.wrong {
+  display: none;
+  color: red;
+  margin-left: 8px;
+}
+
+.opt input.correct:checked ~ .right {
+  display: inline;
+}
+
+.opt input:not(.correct):checked ~ .wrong {
+  display: inline;
+}
